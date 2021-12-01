@@ -40,7 +40,7 @@ export default function Album() {
               color="textPrimary"
               gutterBottom
             >
-              拉勾教育
+              MarketingApp
             </Typography>
             <Typography
               variant="h5"
@@ -48,23 +48,20 @@ export default function Album() {
               color="textSecondary"
               paragraph
             >
-              拉勾教育是拉勾旗下的互联网人职场专业能力提升平台,
-              拉勾教育邀请到国内外互联网名企资深工作者提纲挈领分享宝贵经验.
-              拉勾教育致力于帮助互联网技术人在短周期内对技术深度进行突破,
-              成为更专业的工作者, 是一所真正的互联网人实战大学.
+              MarketingApp Content
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
+              <Grid container spacing={2} justifyContent="center">
                 <Grid item>
                   <Link to="/pricing">
                     <Button variant="contained" color="primary">
-                      价格
+                      Pricing
                     </Button>
-                    <Link to="/dashboard">
-                      <Button variant="contained" color="primary">
-                        Dashboard
-                      </Button>
-                    </Link>
+                  </Link>
+                  <Link to="/dashboard">
+                    <Button variant="contained" color="primary">
+                      Dashboard
+                    </Button>
                   </Link>
                 </Grid>
               </Grid>
@@ -74,7 +71,7 @@ export default function Album() {
       </main>
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          拉勾教育
+          MarketingApp
         </Typography>
         <Typography
           variant="subtitle1"
@@ -82,7 +79,7 @@ export default function Album() {
           color="textSecondary"
           component="p"
         >
-          拉勾旗下专为互联网人打造的实战大学
+          MarketingApp Footer
         </Typography>
       </footer>
     </React.Fragment>

@@ -70,7 +70,7 @@ export default function Pricing() {
           color="textPrimary"
           gutterBottom
         >
-          价格
+          Pricing
         </Typography>
         <Typography
           variant="h5"
@@ -78,12 +78,12 @@ export default function Pricing() {
           color="textSecondary"
           component="p"
         >
-          拉勾旗下专为互联网人打造的实战大学
+          Pricing Content
         </Typography>
       </Container>
 
       <Container maxWidth="md" component="footer" className={classes.footer}>
-        <Grid container spacing={4} justify="space-evenly">
+        <Grid container spacing={4} justifyContent="space-evenly">
           {footers.map(footer => (
             <Grid item xs={6} sm={3} key={footer.title}>
               <Typography variant="h6" color="textPrimary" gutterBottom>
