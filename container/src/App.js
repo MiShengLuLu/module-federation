@@ -1,15 +1,5 @@
-// import React from 'react'
-// import MarketingApp from './components/MarketingApp'
-
-// function App () {
-//   return <div>
-//     <MarketingApp />
-//   </div>
-// }
-
-// export default App
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react"
+import { useLocation } from 'react-router-dom'
 
 function loadComponent(scope, module) {
   return async () => {
@@ -97,9 +87,9 @@ function System(props) {
 }
 
 function App() {
-  const [system, setSystem] = React.useState(undefined);
+  const [system, setSystem] = useState(undefined);
 
-  function setApp2() {
+  function setMarketingApp() {
     setSystem({
       url: "http://localhost:8081/remoteEntry.js",
       scope: "marketing",
@@ -108,7 +98,7 @@ function App() {
   }
 
   useEffect(() => {
-    setApp2()
+    setMarketingApp()
   }, [])
 
   return (
